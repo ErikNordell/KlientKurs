@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+
+<head>
+  <title>1.1 Grunderna i HTML5</title>
+
+  <meta charset="UTF-8">
+  <meta name="author" content="Erik Nordell">
+  <meta name="description" content="Grunderna i HTML5. Kurs vid stockholms universitet">
+  <meta name="generator" content="Non">
+  <meta name="keywords" content="HTML,SU,HTML5,IB908C">
+  <META NAME="ROBOTS" CONTENT="INDEX">
+
+</head>
+
+<body>
+  <h1>Grunderna i HTML5</h1>
+
+  <ul>
+    <li><a href="#doctype">Doctype</a></li>
+    <li><a href="#teckenkod">Teckenkod</a></li>
+    <li><a href="#språk">Språk</a></li>
+    <li><a href="#validering">Validering</a></li>
+    <li><a href="#uppbyggt">Hur ett HTML-dokument är uppbyggt</a></li>
+    <li><a href="#meta">Metataggar</a></li>
+
+  </ul>
+
+
+  <h2 id="doctype">Doctype</h2>
+  <p> Högst upp i alla HTML dokument ska Doctype anges. Doctype anger vilken version av HTML som hemsidan är skriven i och då hur webbläsaren ska tolka dokumentet. Sedan HTML5 räcker det att man anger detta med &lt;!doctype html&gt;. Medans i versioner innan HTML5 behövde man ange alla versioner som man ville stödja. När man enbart skriver &lt;!doctype html&gt; så väljer webbläsaren som läser dokumentet att tolka dokumentet efter den senaste versionen av HTLM. </p>
+
+  <h2 id="teckenkod">Teckenkod</h2>
+  <p> Genom att definiera vilken karaktärsuppsättning som HTLM dokumentet använder garanterar du att tecknen inte översätts eller förändras till andra tecken. Detta är viktigt för läsbarheten både för människor och datorer. </p>
+
+  <h2 id="språk">Språk</h2>
+  <p> På &lt;html&gt; taggen bör man alltid sätta ett språk. Detta gör man genom att skriva till exempel &lt;html lang="en"&gt; för att sätt språket till engelska. Om det är så att man vill skriva en paragraf i ett annat språk än vas som är angivet i HTML taggen kan man ange ett nytt språk för enbart den paragrafen. Att sätta ett språk på hemsidan gör det ger mer information till till exempel sökmotorer som kan då ge bättre sökresultat.  </p>
+
+  <h2 id="validering">Validering</h2>
+  <p>En validerad hemsida följer vissa bestämda regler för hur en hemsida bör vara uppbyggt. Webbläsare som försöker visa ett html dokument som inte är validerad kan få behöva göra antaganden för att kunna visa innehållet i dokumentet. Detta medför att olika webbläsare kan göra olika antaganden och då visa HTML dokumentet på olika sätt. </p>
+
+  <h2 id="uppbyggt">Hur ett HTML-dokument är uppbyggt</h2>
+  <p>
+  Ett HTML dokument inleds alltid med en deklaration av vilken dokumentversion som dokumenten stödjer. Enligt HTML5 görs detta genom att &lt;!doctype html&gt; skrivs.
+  <br>
+  Detta följs av en html-tagg, &lt;html&gt; med tillhörande avslut, &lt;/html&gt;. HTML-taggarna markerar starten och slutet av det i dokumentet som ska ses som html kod.
+  <br>
+  Mellan dessa taggar ska två andra taggar finnas, &lt;head&gt;&lt;/head&gt; och &lt;body&gt;&lt;/body&gt;. Inuti head-taggen kan det finnas en titel, stilar, script och annan information som definierar dokumentet men inte sys på när dokumentet visas.
+  Inuti body-taggen skrivs allt som ska visas och synas för användaren, så som överskrifter, länkar, paragrafer och listor.
+  </p>
+
+  <h2 id="meta">Metataggar</h2>
+  <p>
+
+  </p>
+
+  <a href="https://validator.w3.org/check?uri=referer"><img
+  src="http://www.w3.org/Icons/valid-xhtml10"
+  alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+
+</body>
+
+
+
+</html>
