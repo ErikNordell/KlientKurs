@@ -18,7 +18,8 @@
 </head>
 
 <body>
-<div>
+<div class="mainDiv">
+
 <h1>Grunderna i HTML5</h1>
 
 <ul>
@@ -29,7 +30,8 @@
   <li><a href="#uppbyggt">Hur ett HTML-dokument är uppbyggt</a></li>
   <li><a href="#meta">Metataggar</a></li>
   <li><a href="#textelement">Textelement</a></li>
-
+  <li><a href="#tableHeader">Tabeller</a></li>
+  <li><a href="#imgAndArea">Bilder och klickbara element</a></li>
 </ul>
 
 
@@ -64,8 +66,9 @@
 </p>
 
 <h2 id="meta">Metataggar</h2>
-<p>
-  Metadata är data som inte visas för användaren men används för att beskriva din sida för datorer. Exempel på metataggar:
+  <p>
+    Metadata är data som inte visas för användaren men används för att beskriva din sida för datorer. Exempel på metataggar:
+  </p>
   <dl>
     <dt>Author</dt>
     <dd>Vem som är skaparen av webbsidan.</dd>
@@ -80,29 +83,88 @@
     <dt>http-equiv</dt>
     <dd>Med denna tag kan man simulera den information som finns i serverns response header utan att behöva ha tillgång till serverinställningarna.</dd>
   </dl>
-</p>
+
 
 <h2 id="textelement">Textelement</h2>
 <h3>&lt;Blockquote&gt;</h3>
 <p>Markerar ett stycker som refererar till en annan källa.</p>
 
 <h3>Överskrifter</h3>
-<p>
-  Det finns sex olika överskrifter fördefinierade i HTML h1 till h6. H1 bör endas användas en gång, eller åtminstone mycket sparsamt och om du hörjar använda h4, h5 och h6 bör du fundera över din uppbyggnad på  webbsidan
+  <p>
+    Det finns sex olika överskrifter fördefinierade i HTML h1 till h6. H1 bör endas användas en gång, eller åtminstone mycket sparsamt och om du hörjar använda h4, h5 och h6 bör du fundera över din uppbyggnad på  webbsidan
+  </p>
   <h1 class="hExampel">Detta är h1</h1>
   <h2 class="hExampel">Detta är h2</h2>
   <h3 class="hExampel">Detta är h3</h3>
   <h4 class="hExampel">Detta är h4</h4>
   <h5 class="hExampel">Detta är h5</h5>
   <h6 class="hExampel">Detta är h6</h6>
+
+
+<h3>Paragraf</h3>
+<p>Paragraf taggen &lt;p&gt; </p>
+
+<h3>&lt;pre&gt; </h3>
+<p>test test test test test test test test test test </p>
+
+<h3>Span</h3>
+<p>test test test test test test </p>
+
+<h2 id="tableHeader">Tabeller</h2>
+<p>
+  Tabeller bygger först och främst på fyra olika taggar:
 </p>
+  <ol class="tableList">
+    <li>&lt;table&gt; Tag för att markera start och slut för tabellen</li>
+    <li>&lt;th&gt; Tag för att sätta rubriker. </li>
+    <li>&lt;tr&gt; Tag för att skapa en ny rad i tabellen.</li>
+    <li>&lt;td&gt; Tag för att skapa en ny datacell i tabellen. </li>
+  </ol>
+  <p>
+  Utöver dessa fyra taggar gå det även att lägga till andra element så som &lt;caption&gt; för att skapa en titel för tabellen.
+  </p>
+  <table>
+    <caption>Detta är en tabell.</caption>
+    <tr>
+      <th>Djur</th>
+      <th>Har svans?</th>
+    </tr>
+    <tr>
+      <td>Hund</td>
+      <td>Sant</td>
+    </tr>
+    <tr>
+      <td>Häst</td>
+      <td>Sant</td>
+    </tr>
+    <tr>
+      <td>Svan</td>
+      <td>Falskt</td>
+    </tr>
+  </table>
 
 
-<a href="https://validator.w3.org/check?uri=referer"><img
-src="http://www.w3.org/Icons/valid-xhtml10"
-alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+
+<h2 id="imgAndArea">Bilder och klickbara element</h2>
+<div>
+  <p>Detta är en bild som är hämtad med hjälp av en http-länk</p>
+  <img
+  src="http://www.w3.org/Icons/valid-xhtml10"
+  alt="Valid XHTML 1.0!"
+  height="31"
+  width="88"
+  usemap="#linkMap">
+
+  <map name="linkMap">
+    <area shape="rect" coords="0,0,37,31" href="https://validator.w3.org/#validate_by_upload" alt="w3c">
+    <area shape="rect" coords="38,0,88,31" href="https://google.se" alt="w3c">
+  </map>
+  <p>Om man klickar på den vita delen av bilden så kommer man till w3schools hemsida för validering av hemsidor och om man klickar på den gula delen av bilden kommer man till google. Dessa områden är klickbara med hjäpla av en &lt;map&gt; tag och två &lt;area&gt; tag</p>
+</div>
 
 </div>
+
+<div class="footer"> </div>
 
 </body>
 
