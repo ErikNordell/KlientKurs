@@ -41,3 +41,8 @@ body {
  table {
    margin: 5px;
  }
+
+ .spanExampel {
+   color:red;
+   font-size: 15pt
+ }
